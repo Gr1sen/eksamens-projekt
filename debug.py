@@ -15,7 +15,8 @@ from random import randint
 
 def debugDecorator(func):
     def wrapper(*args, **kwargs):
-        print(f"[DEBUG] Calling {func.__name__}({args}, {kwargs})")
+        # remove the '#' to enable debugging
+        #print(f"[DEBUG] Calling {func.__name__}({args}, {kwargs})")
         return func(*args, **kwargs)
     return wrapper
 
